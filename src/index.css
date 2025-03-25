@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.header-bg-gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(10, 10, 10, 1) 0%,
+    rgba(10, 6, 26, 1) 100%
+  );
+}
+
+.hero {
+  background: url("assets/images/hero-bg.jpg");
+}
