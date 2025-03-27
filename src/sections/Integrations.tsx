@@ -1,4 +1,5 @@
-import Tag from "../components/Tag";
+import Tag from "@/components/Tag";
+import IntegrationsColumn from "@/components/IntegrationsColumn";
 
 const integrations = [
   {
@@ -38,42 +39,32 @@ const integrations = [
   },
 ];
 
+export type IntegrationsType = typeof integrations;
+
 const Integrations = () => {
   return (
     <section className="overflow-hidden py-20 px-4">
-      <div className="container w-full mx-auto flex">
-        <div>
-          <Tag>Integrations</Tag>
-          <h1 className="text-gray-200 font-medium text-6xl mt-2">
-            Integrate well with <span className="text-violet-500">others</span>
-          </h1>
-          <p className="text-zinc-400 mt-4">
-            CodeFlow seamlessly connects with your favorite tools, making it
-            easy to plug into any workflow and collaborate across platforms.
-          </p>
-        </div>
-        <div className="">
-          <div className="flex flex-col gap-4 pb-4">
-            {integrations.map((integration) => (
-              <div
-                key={integration.name}
-                className="flex flex-col justify-center items-center bg-neutral-900 p-6 rounded-3xl border border-white/15"
-              >
-                <div className="bg-white p-3 rounded-2xl">
-                  <img
-                    src={integration.src}
-                    alt={`${integration.name} logo`}
-                    className="size-10"
-                  />
-                </div>
-                <h3 className="text-gray-200 text-2xl mt-4">
-                  {integration.name}
-                </h3>
-                <p className="text-center text-zinc-400 mt-2">
-                  {integration.description}
-                </p>
-              </div>
-            ))}
+      <div className="container w-full mx-auto">
+        <div className="grid lg:grid-cols-2 items-center lg:gap-16">
+          <div>
+            <Tag>Integrations</Tag>
+            <h1 className="text-gray-200 font-medium text-3xl sm:text-5xl lg:text-6xl mt-2">
+              Integrate well with{" "}
+              <span className="text-violet-500">others</span>
+            </h1>
+            <p className="text-zinc-400 mt-4">
+              CodeFlow seamlessly connects with your favorite tools, making it
+              easy to plug into any workflow and collaborate across platforms.
+            </p>
+          </div>
+          <div className="lg:max-w-[500px] w-full lg:justify-self-end">
+            <div className="h-[400px] lg:h-[800px] mt-4 overflow-hidden grid md:grid-cols-2 gap-4 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]">
+              <IntegrationsColumn integrations={integrations} />
+              <IntegrationsColumn
+                integrations={integrations.slice().reverse()}
+                className="hidden md:flex"
+              />
+            </div>
           </div>
         </div>
       </div>

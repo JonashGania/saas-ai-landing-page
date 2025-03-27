@@ -2,7 +2,7 @@ import LogoTicker from "../components/LogoTicker";
 
 const Hero = () => {
   return (
-    <section className="min-h-[90vh] md:min-h-screen w-full hero bg-cover bg-center bg-no-repeat pb-32">
+    <section className="min-h-[100vh] md:min-h-screen w-full hero bg-cover bg-center bg-no-repeat pt-20 pb-32">
       <div className="pt-20 flex flex-col gap-4 px-4">
         <h1 className="max-w-[430px] mx-auto text-center text-4xl sm:text-[50px] font-bold text-gray-200 sm:leading-16">
           AI Powered, Coding Simplified
