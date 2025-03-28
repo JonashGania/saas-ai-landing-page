@@ -12,8 +12,6 @@ const navLinks = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  console.log(isOpen);
-
   return (
     <header className="py-9 px-4 flex items-center fixed w-full top-0 z-50">
       <div className="max-w-[675px] w-full mx-auto border border-white/15 pl-3 pr-3 sm:pr-1 py-1 rounded-3xl sm:rounded-full bg-neutral-900/70  backdrop-blur">
