@@ -46,6 +46,7 @@ const Faqs = () => {
         >
           {faqs.map((faq, index) => (
             <AccordionItem
+              key={index}
               value={`item-${index}`}
               className="bg-neutral-900 border border-white/15 px-4 py-2 rounded-2xl"
             >
