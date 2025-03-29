@@ -1,3 +1,5 @@
+import logo from "../assets/logos/logo.svg";
+
 const footerLinks = [
   { label: "Contact", href: "#" },
   { label: "Privacy Policy", href: "#" },
@@ -9,7 +11,7 @@ const Footer = () => {
     <footer className="pt-20 pb-12 px-4">
       <div className="container mx-auto flex flex-col sm:flex-row items-center gap-4 justify-between">
         <div className="flex items-center gap-2">
-          <img src="/logo.svg" alt="CodeFlow logo" className="h-10 w-10" />
+          <img src={logo} alt="CodeFlow logo" className="h-10 w-10" />
           <span className="text-gray-300 font-bold text-lg">CodeFlow</span>
         </div>
         <div className="flex text-sm sm:text-base items-center gap-4 text-zinc-400">

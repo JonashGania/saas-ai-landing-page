@@ -1,4 +1,5 @@
 import LogoTicker from "../components/LogoTicker";
+import dashboardBg from "../assets/images/hero-dashboard.png";
 
 const Hero = () => {
   return (
@@ -25,7 +26,7 @@ const Hero = () => {
 
       <div className="max-w-[975px] w-full mx-auto px-4 mt-20 sm:mt-8">
         <img
-          src="/images/hero-dashboard.png"
+          src={dashboardBg}
           alt="Dashboard Image"
           className=" object-cover w-full h-full"
         />

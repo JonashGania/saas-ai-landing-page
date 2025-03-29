@@ -36,7 +36,7 @@
 }
 
 .hero {
-  background: url("/public/images/hero-bg.jpg") no-repeat center center/cover;
+  background: url("../assets/images/hero-bg.jpg") no-repeat center center/cover;
 }
 
 :root {

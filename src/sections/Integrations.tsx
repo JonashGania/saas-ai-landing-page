@@ -1,39 +1,45 @@
 import Tag from "@/components/Tag";
 import IntegrationsColumn from "@/components/IntegrationsColumn";
+import vscode from "../assets/logos/vscode.svg";
+import github from "../assets/logos/github.svg";
+import jetbrains from "../assets/logos/jetbrain.svg";
+import neovim from "../assets/logos/neovim.svg";
+import bitbucket from "../assets/logos/bitbucket.svg";
+import gitlab from "../assets/logos/gitlab.svg";
 
 const integrations = [
   {
     name: "Visual Studio Code",
-    src: "/logos/vscode.svg",
+    src: vscode,
     description:
       "Visual Studio Code is a fast, lightweight editor with powerful AI extensions.",
   },
   {
     name: "Github",
-    src: "/logos/github.svg",
+    src: github,
     description:
       "Github is the go-to platform for version control and collaboration.",
   },
   {
     name: "JetBrains",
-    src: "/logos/jetbrain.svg",
+    src: jetbrains,
     description:
       "JetBrains is a smart development tools for maximum productivity.",
   },
   {
     name: "Neovim",
-    src: "/logos/neovim.svg",
+    src: neovim,
     description: "Neovim is a modern, customizable Vim-based editor.",
   },
   {
     name: "Bitbucket",
-    src: "/logos/bitbucket.svg",
+    src: bitbucket,
     description:
       "Bitbucket is a Git solution with built-in CI/CD and Jira integration.",
   },
   {
     name: "GitLab",
-    src: "/logos/gitlab.svg",
+    src: gitlab,
     description:
       "GitLab is a complete DevOps platform with CI/CD and security.",
   },

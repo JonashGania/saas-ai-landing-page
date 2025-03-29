@@ -1,14 +1,21 @@
 import { Fragment } from "react/jsx-runtime";
 import { motion } from "motion/react";
+import clandestine from "../assets/logos/clandestine.svg";
+import cubekit from "../assets/logos/cubekit.svg";
+import foresight from "../assets/logos/foresight.svg";
+import galileo from "../assets/logos/galileo.svg";
+import hexsmith from "../assets/logos/hexsmith.svg";
+import magnolia from "../assets/logos/magnolia.svg";
+import segment from "../assets/logos/segment.svg";
 
 const brandLogos = [
-  { src: "/logos/clandestine.svg", alt: "Clandestine" },
-  { src: "/logos/cubekit.svg", alt: "Cubkit" },
-  { src: "/logos/foresight.svg", alt: "Forsight" },
-  { src: "/logos/galileo.svg", alt: "Galileo" },
-  { src: "/logos/hexsmith.svg", alt: "Hexsmith" },
-  { src: "/logos/magnolia.svg", alt: "Magnolia" },
-  { src: "/logos/segment.svg", alt: "Segment" },
+  { src: clandestine, alt: "Clandestine" },
+  { src: cubekit, alt: "Cubekit" },
+  { src: foresight, alt: "Foresight" },
+  { src: galileo, alt: "Galileo" },
+  { src: hexsmith, alt: "Hexsmith" },
+  { src: magnolia, alt: "Magnolia" },
+  { src: segment, alt: "Segment" },
 ];
 
 const LogoTicker = () => {

@@ -1,6 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
+import logo from "../assets/logos/logo.svg";
 
 const navLinks = [
   { label: "Home", href: "#" },
@@ -16,7 +17,7 @@ const Navbar = () => {
     <header className="py-9 px-4 flex items-center fixed w-full top-0 z-50">
       <div className="max-w-[675px] w-full mx-auto border border-white/15 pl-3 pr-3 sm:pr-1 py-1 rounded-3xl sm:rounded-full bg-neutral-900/70  backdrop-blur">
         <div className="gap-4 flex items-center justify-between">
-          <img src="/logo.svg" alt="CodeFlow logo" className="w-[40px]" />
+          <img src={logo} alt="CodeFlow logo" className="w-[40px]" />
           <nav className="hidden sm:flex items-center justify-center gap-6">
             {navLinks.map((link) => (
               <a href={link.href} key={link.label} className="text-gray-200 ">

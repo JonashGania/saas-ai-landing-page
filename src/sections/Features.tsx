@@ -2,6 +2,10 @@ import Tag from "../components/Tag";
 import FeatureCard from "../components/FeatureCard";
 import Avatar from "../components/Avatar";
 import Key from "../components/Key";
+import avatar1 from "../assets/images/avatar-1.jpg";
+import avatar2 from "../assets/images/avatar-2.jpg";
+import avatar3 from "../assets/images/avatar-3.jpg";
+import avatar4 from "../assets/images/avatar-4.jpg";
 import { Ellipsis } from "lucide-react";
 import { motion } from "motion/react";
 import { useState } from "react";
@@ -62,21 +66,21 @@ const Features = () => {
           <div className="aspect-video flex items-center justify-center">
             <Avatar className="z-40">
               <img
-                src="/images/avatar-1.jpg"
+                src={avatar1}
                 alt="avatar"
                 className="w-full h-full object-cover rounded-full"
               />
             </Avatar>
             <Avatar className="-ml-6 border-indigo-500 z-30">
               <img
-                src="/images/avatar-2.jpg"
+                src={avatar2}
                 alt="avatar"
                 className="w-full h-full object-cover rounded-full"
               />
             </Avatar>
             <Avatar className="-ml-6 border-orange-500 z-20">
               <img
-                src="/images/avatar-3.jpg"
+                src={avatar3}
                 alt="avatar"
                 className="w-full h-full object-cover rounded-full"
               />
@@ -84,7 +88,7 @@ const Features = () => {
             <Avatar className="-ml-6 border-transparent group-hover:border-green-500 transition duration-300">
               <div className="size-full bg-neutral-700 rounded-full grid place-items-center relative">
                 <img
-                  src="/images/avatar-4.jpg"
+                  src={avatar4}
                   alt="avatar"
                   className="absolute size-full rounded-full opacity-0 group-hover:opacity-100 transition duration-300"
                 />
